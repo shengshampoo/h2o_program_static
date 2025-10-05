@@ -12,7 +12,7 @@ RUN apk add --no-cache \
   python3-dev curl zstd-static zstd-dev openssl-dev openssl-libs-static \
   g++ git libuv-static libuv-dev libcap-static libcap-dev \
   cmake ninja ruby mruby mruby-dev ruby-rake perl \
-  autoconf automake libtool bison bash xz
+  autoconf automake libtool bison liburing-dev bash xz
 
 ENV XZ_OPT=-e9
 COPY build-static-h2o.sh  build-static-h2o.sh
